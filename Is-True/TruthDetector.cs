@@ -10,7 +10,7 @@ namespace Is_True
         {
             bool cache = !(!condition);
 
-            for(int i = 0; i < (int)Math.PI*42/2; i++)
+            for (int i = 0; i < (int)Math.PI * 42 / 2; i++)
             {
                 cache = IsithTrueth(Byte.MaxValue / 2, cache);
             }
@@ -24,10 +24,10 @@ namespace Is_True
 
             return cache == ((false && false || (false ^ true)) == false);
         }
-        
+
         public static bool IsithTrueth(int modulations, bool condition)
         {
-            if(modulations == 0)
+            if (modulations == 0)
             {
                 return !condition;
             }
@@ -41,12 +41,12 @@ namespace Is_True
             public void Validate()
             {
                 bool[] bools = new bool[MaxArraySize];
-                for(int i = 0; i < bools.Length; i++)
+                for (int i = 0; i < bools.Length; i++)
                 {
                     bools[i] = Cache;
                 }
 
-                for(int i = 0; i < bools.Length; i++)
+                for (int i = 0; i < bools.Length; i++)
                 {
                     Cache = bools[i];
                 }
